@@ -1,0 +1,71 @@
+{
+  "common": {
+    "appName": "Nereden?",
+    "loading": "Yükleniyor...",
+    "error": "Bir hata oluştu",
+    "retry": "Tekrar Dene",
+    "cancel": "İptal",
+    "save": "Kaydet",
+    "delete": "Sil",
+    "search": "Ara",
+    "seeAll": "Tümünü Gör",
+    "empty": "Henüz içerik yok",
+    "comingSoon": "Yakında",
+    "comingSoonDescription": "Bu özellik üzerinde çalışıyoruz. Çok yakında kullanıma sunulacak."
+  },
+  "auth": {
+    "login": "Giriş Yap",
+    "register": "Kayıt Ol",
+    "logout": "Çıkış Yap",
+    "forgotPassword": "Şifremi Unuttum",
+    "email": "E-posta",
+    "password": "Şifre",
+    "fullName": "Ad Soyad"
+  },
+  "tabs": {
+    "home": "Keşfet",
+    "search": "Ara",
+    "favorites": "Favoriler",
+    "profile": "Profil"
+  },
+  "home": {
+    "title": "Keşfet",
+    "subtitle": "Fotoğraf çek, benzer ürünleri bul"
+  },
+  "camera": {
+    "title": "Fotoğraf Çek",
+    "gallery": "Galeriden Seç"
+  },
+  "analysis": {
+    "title": "Analiz Ediliyor",
+    "subtitle": "Ürününüz tanımlanıyor..."
+  },
+  "product": {
+    "exactMatch": "Aynı Ürün",
+    "similar": "Benzer Ürünler",
+    "cheaper": "Daha Uygun Alternatifler",
+    "stores": "Satıcılar",
+    "priceRange": "Tahmini Fiyat Aralığı"
+  },
+  "settings": {
+    "title": "Ayarlar",
+    "theme": "Tema",
+    "language": "Dil",
+    "notifications": "Bildirimler",
+    "premium": "Premium",
+    "legal": "Yasal",
+    "privacyPolicy": "Gizlilik Politikası",
+    "terms": "Kullanım Koşulları",
+    "support": "Destek",
+    "contact": "İletişim",
+    "about": "Uygulama",
+    "version": "Sürüm {{version}} ({{build}})"
+  },
+  "premium": {
+    "title": "Premium",
+    "subtitle": "Sınırsız arama ve öncelikli analiz"
+  },
+  "admin": {
+    "title": "Yönetim Paneli"
+  }
+}

@@ -16,7 +16,7 @@ expo-env.d.ts
 *.p8
 *.p12
 *.key
-*.mobileprovision
+play-store-service-account.json
 
 # Metro
 .metro-health-check*
@@ -31,6 +31,7 @@ yarn-error.*
 *.pem
 
 # local env files
+.env
 .env*.local
 
 # typescript

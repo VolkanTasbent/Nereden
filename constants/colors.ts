@@ -1,0 +1,41 @@
+export const lightColors = {
+  background: '#F5F5F7',
+  backgroundSecondary: '#FFFFFF',
+  backgroundTertiary: '#EFEFF4',
+  foreground: '#0A0A0A',
+  foregroundSecondary: '#6E6E73',
+  foregroundTertiary: '#AEAEB2',
+  primary: '#0A0A0A',
+  primaryForeground: '#FFFFFF',
+  accent: '#0A0A0A',
+  accentForeground: '#FFFFFF',
+  accentMuted: '#EFEFF4',
+  success: '#34C759',
+  warning: '#FF9F0A',
+  error: '#FF3B30',
+  border: '#E5E5EA',
+  glass: 'rgba(255, 255, 255, 0.88)',
+  overlay: 'rgba(0, 0, 0, 0.45)',
+} as const;
+
+export const darkColors = {
+  background: '#000000',
+  backgroundSecondary: '#1C1C1E',
+  backgroundTertiary: '#2C2C2E',
+  foreground: '#F5F5F7',
+  foregroundSecondary: '#98989D',
+  foregroundTertiary: '#636366',
+  primary: '#F5F5F7',
+  primaryForeground: '#0A0A0A',
+  accent: '#F5F5F7',
+  accentForeground: '#0A0A0A',
+  accentMuted: '#2C2C2E',
+  success: '#30D158',
+  warning: '#FF9F0A',
+  error: '#FF453A',
+  border: '#38383A',
+  glass: 'rgba(28, 28, 30, 0.88)',
+  overlay: 'rgba(0, 0, 0, 0.65)',
+} as const;
+
+export type ThemeColors = typeof lightColors;

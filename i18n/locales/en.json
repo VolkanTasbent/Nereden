@@ -1,0 +1,71 @@
+{
+  "common": {
+    "appName": "Nereden?",
+    "loading": "Loading...",
+    "error": "Something went wrong",
+    "retry": "Retry",
+    "cancel": "Cancel",
+    "save": "Save",
+    "delete": "Delete",
+    "search": "Search",
+    "seeAll": "See All",
+    "empty": "No content yet",
+    "comingSoon": "Coming soon",
+    "comingSoonDescription": "We are working on this feature. It will be available soon."
+  },
+  "auth": {
+    "login": "Sign In",
+    "register": "Sign Up",
+    "logout": "Sign Out",
+    "forgotPassword": "Forgot Password",
+    "email": "Email",
+    "password": "Password",
+    "fullName": "Full Name"
+  },
+  "tabs": {
+    "home": "Explore",
+    "search": "Search",
+    "favorites": "Favorites",
+    "profile": "Profile"
+  },
+  "home": {
+    "title": "Explore",
+    "subtitle": "Snap a photo, find similar products"
+  },
+  "camera": {
+    "title": "Take Photo",
+    "gallery": "Choose from Gallery"
+  },
+  "analysis": {
+    "title": "Analyzing",
+    "subtitle": "Identifying your product..."
+  },
+  "product": {
+    "exactMatch": "Exact Match",
+    "similar": "Similar Products",
+    "cheaper": "Cheaper Alternatives",
+    "stores": "Stores",
+    "priceRange": "Estimated Price Range"
+  },
+  "settings": {
+    "title": "Settings",
+    "theme": "Theme",
+    "language": "Language",
+    "notifications": "Notifications",
+    "premium": "Premium",
+    "legal": "Legal",
+    "privacyPolicy": "Privacy Policy",
+    "terms": "Terms of Service",
+    "support": "Support",
+    "contact": "Contact",
+    "about": "About",
+    "version": "Version {{version}} ({{build}})"
+  },
+  "premium": {
+    "title": "Premium",
+    "subtitle": "Unlimited searches and priority analysis"
+  },
+  "admin": {
+    "title": "Admin Panel"
+  }
+}

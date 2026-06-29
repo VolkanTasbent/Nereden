@@ -1,0 +1,20 @@
+services:
+  postgres:
+    image: postgres:16-alpine
+    container_name: nereden-postgres
+    environment:
+      POSTGRES_DB: nereden
+      POSTGRES_USER: nereden
+      POSTGRES_PASSWORD: nereden
+    ports:
+      - "5432:5432"
+    volumes:
+      - nereden_pg_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U nereden -d nereden"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+
+volumes:
+  nereden_pg_data:

@@ -1,0 +1,71 @@
+spring:
+  application:
+    name: nereden-api
+
+  config:
+    import: optional:file:.env[.properties]
+
+  datasource:
+    url: jdbc:postgresql://${DB_HOST:localhost}:${DB_PORT:5432}/${DB_NAME:nereden}
+    username: ${DB_USER:nereden}
+    password: ${DB_PASSWORD:nereden}
+    driver-class-name: org.postgresql.Driver
+
+  flyway:
+    enabled: true
+    locations: classpath:db/migration
+    baseline-on-migrate: true
+
+  jpa:
+    hibernate:
+      ddl-auto: validate
+    open-in-view: false
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+        format_sql: true
+
+  servlet:
+    multipart:
+      max-file-size: 10MB
+      max-request-size: 10MB
+
+server:
+  port: ${SERVER_PORT:8080}
+  servlet:
+    context-path: /api
+
+app:
+  jwt:
+    secret: ${JWT_SECRET:change-me-in-production-use-at-least-256-bits}
+    access-token-expiration-ms: 900000      # 15 min
+    refresh-token-expiration-ms: 604800000  # 7 days
+  storage:
+    upload-dir: ${UPLOAD_DIR:./uploads}
+    base-url: ${STORAGE_BASE_URL:http://localhost:8080/api/files}
+  cors:
+    allowed-origins: ${CORS_ORIGINS:http://localhost:8081,exp://localhost:8081}
+  ai:
+    gemini:
+      api-key: ${GEMINI_API_KEY:}
+      model: ${GEMINI_MODEL:gemini-2.5-flash}
+      pro-model: ${GEMINI_PRO_MODEL:gemini-2.5-pro}
+    openai:
+      api-key: ${OPENAI_API_KEY:}
+      model: ${OPENAI_MODEL:gpt-4o-mini}
+  market:
+    searchapi:
+      api-key: ${SEARCHAPI_KEY:}
+    serpapi:
+      api-key: ${SERPAPI_KEY:}
+
+springdoc:
+  api-docs:
+    path: /v3/api-docs
+  swagger-ui:
+    path: /swagger-ui.html
+
+logging:
+  level:
+    com.nereden: DEBUG
+    org.springframework.security: INFO

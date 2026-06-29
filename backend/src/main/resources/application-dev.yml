@@ -1,0 +1,6 @@
+spring:
+
+logging:
+  level:
+    com.nereden: DEBUG
+    org.springframework.security: INFO
